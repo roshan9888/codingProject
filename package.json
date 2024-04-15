@@ -2,7 +2,6 @@
   "name": "studynotion-client",
   "description": "This is the client side of the StudyNotion App",
   "version": "0.1.0",
-  "private": true,
   "dependencies": {
     "@ramonak/react-progress-bar": "^5.0.3",
     "@reduxjs/toolkit": "^1.9.5",
@@ -44,13 +43,14 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "concurrently -n \"client, server\" -c \"bgBlue,bgYellow\" \"npm run react-start\" \"npm run server-start\"",
+    "react-start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "server": "cd server && npm run dev",
-    "dev": "concurrently -n \"client,server\" -c \"bgBlue,bgYellow\" \"npm start\" \"npm run server\""
-  },
+    "server-start": "cd server && npm run dev",
+    "dev": "concurrently -n \"client, server\" -c \"bgBlue,bgYellow\" \"npm start\" \"npm run server\""
+    },
   "eslintConfig": {
     "extends": [
       "react-app",
