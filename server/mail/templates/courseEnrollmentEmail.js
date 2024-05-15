@@ -67,7 +67,7 @@ exports.courseEnrollmentEmail = (courseName, name) => {
   
   <body>
       <div class="container">
-          <a href="https://studynotion-edtech-project.vercel.app"><img class="logo" src="https://i.ibb.co/s30hS6C/Whats-App-Image-2023-12-17-at-08-28-38-1.jpg"
+          <a href="https://coding-project-frontend.vercel.app/"><img class="logo" src="https://i.ibb.co/s30hS6C/Whats-App-Image-2023-12-17-at-08-28-38-1.jpg"
                   alt="CodingWeb Logo"></a>
           <div class="message">Course Registration Confirmation</div>
           <div class="body">
@@ -76,7 +76,7 @@ exports.courseEnrollmentEmail = (courseName, name) => {
                   are excited to have you as a participant!</p>
               <p>Please log in to your learning dashboard to access the course materials and start your learning journey.
               </p>
-              <a class="cta" href="https://studynotion-edtech-project.vercel.app/dashboard">Go to Dashboard</a>
+              <a class="cta" href="https://coding-project-frontend.vercel.app/">Go to Dashboard</a>
           </div>
           <div class="support">If you have any questions or need assistance, please feel free to reach out to us at <a
 					href="mailto:codingweb287@gmail.com">codingweb287@gmail.com</a>. We are here to help!</div>
