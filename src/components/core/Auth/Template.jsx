@@ -1,6 +1,5 @@
 // import { FcGoogle } from "react-icons/fc"
 import { useSelector } from "react-redux"
-
 import frameImg from "../../../assets/Images/frame.png"
 import LoginForm from "./LoginForm"
 import SignupForm from "./SignupForm"
@@ -9,7 +8,7 @@ function Template({ title, description1, description2, image, formType }) {
   const { loading } = useSelector((state) => state.auth)
 
   return (
-    <div className="grid min-h-[calc(100vh-3.5rem)] place-items-center">
+    <div className="grid min-h-[calc(100vh-5.5rem)] place-items-center">
       {loading ? (
         <div className="spinner"></div>
       ) : (
@@ -30,17 +29,16 @@ function Template({ title, description1, description2, image, formType }) {
             <img
               src={frameImg}
               alt="Pattern"
-              width={558}
+              width={550}
               height={504}
               loading="lazy"
             />
             <img
               src={image}
               alt="Students"
-              width={558}
-              height={504}
+              style={{ maxWidth: '100%', maxHeight: '100%', width: '550px', height: '408px' }}
               loading="lazy"
-              className="absolute -top-4 right-4 z-10"
+              className="Students absolute -top-4 right-4 z-10"
             />
           </div>
         </div>
