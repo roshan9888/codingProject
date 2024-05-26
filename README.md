@@ -1,6 +1,7 @@
 # CodingWeb Edtech Project
 
 **CodingWeb**
+
 CodingWeb is an ED Tech (Education Technology) web application developed using the MERN stack.
 
 **Features**
