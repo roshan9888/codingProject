@@ -1,12 +1,12 @@
 # CodingWeb Edtech Project
 
-User Authentication: CodeEasy provides secure user registration and authentication using JWT (JSON Web Tokens). Users can sign up, log in, and manage their profiles with ease.
+User Authentication: CodingWeb provides secure user registration and authentication using JWT (JSON Web Tokens). Users can sign up, log in, and manage their profiles with ease.
 
 Courses and Lessons: Instructors can create and edit created courses. Students can enroll in courses, access course materials, and track their progress.
 
-Progress Tracking: CodeEasy allows students to track their progress in enrolled courses. They can view completed lessons, scores on quizzes and assignments, and overall course progress.
+Progress Tracking: CodingWeb allows students to track their progress in enrolled courses. They can view completed lessons, scores on quizzes and assignments, and overall course progress.
 
-Payment Integration: CodeEasy integrates with Razorpay for payment processing. Users can make secure payments for course enrollment and other services using various payment methods supported by Razorpay.
+Payment Integration: CodingWeb integrates with Razorpay for payment processing. Users can make secure payments for course enrollment and other services using various payment methods supported by Razorpay.
 
 Search Functionality: Users can easily search for courses, lessons, and resources using the built-in search feature. This makes it convenient to find relevant content quickly.
 
