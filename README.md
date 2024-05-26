@@ -1,6 +1,11 @@
 # CodingWeb Edtech Project
 
-User Authentication: CodingWeb provides secure user registration and authentication using JWT (JSON Web Tokens). Users can sign up, log in, and manage their profiles with ease.
+**CodingWeb**
+CodingWeb is an ED Tech (Education Technology) web application developed using the MERN stack.
+
+**Features**
+
+**User Authentication: CodingWeb provides secure user registration and authentication using JWT (JSON Web Tokens). Users can sign up, log in, and manage their profiles with ease.
 
 Courses and Lessons: Instructors can create and edit created courses. Students can enroll in courses, access course materials, and track their progress.
 
