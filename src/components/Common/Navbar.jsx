@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react"
+import { useEffect, useState,useCallback } from "react"
 import { AiOutlineMenu, AiOutlineShoppingCart } from "react-icons/ai"
 import { BsChevronDown } from "react-icons/bs"
 import { useSelector } from "react-redux"
@@ -39,18 +39,37 @@ function Navbar() {
   const [subLinks, setSubLinks] = useState([])
   const [loading, setLoading] = useState(false)
 
-  useEffect(() => {
-    ;(async () => {
-      setLoading(true)
-      try {
-        const res = await apiConnector("GET", categories.CATEGORIES_API)
-        setSubLinks(res.data.data)
-      } catch (error) {
+  // useEffect(() => {
+  //   (async () => {
+  //     setLoading(true)
+  //     try {
+  //       const res = await apiConnector("GET", categories.CATEGORIES_API)
+  //       setSubLinks(res.data.data)
+  //     } catch (error) {
+  //       console.log("Could not fetch Categories.", error)
+  //     }
+  //     setLoading(false)
+  //   })()
+  // }, [])
+
+  const fetchCategories = useCallback(async (controller) => {
+    setLoading(true)
+    try {
+      const res = await apiConnector("GET", categories.CATEGORIES_API, { signal: controller.signal })
+      setSubLinks(res.data.data)
+    } catch (error) {
+      if (error.name !== 'AbortError') {
         console.log("Could not fetch Categories.", error)
       }
-      setLoading(false)
-    })()
+    }
+    setLoading(false)
   }, [])
+
+  useEffect(() => {
+    const controller = new AbortController()
+    fetchCategories(controller)
+    return () => controller.abort()
+  }, [fetchCategories])
 
   // console.log("sub links", subLinks)
 
