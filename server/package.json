@@ -1,7 +1,7 @@
 {
-	"name": "studynotion-backend",
+	"name": "codingweb-backend",
 	"version": "1.0.0",
-	"description": "studynotion-backend",
+	"description": "codingweb-backend",
 	"main": "index.js",
 	"scripts": {
 		"start": "node index.js",
@@ -9,9 +9,9 @@
 		"build":"npm i"
 	},
 	"keywords": [
-		"studynotion-backend"
+		"codingweb-backend"
 	],
-	"author": "Saikat Mukherjee",
+	"author": "Roshan Kumar",
 	"license": "ISC",
 	"dependencies": {
 		"bcrypt": "^5.1.0",
