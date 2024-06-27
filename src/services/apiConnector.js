@@ -2,7 +2,7 @@ import axios from "axios";
 
 // export const axiosInstance = axios.create({});
 export const axiosInstance = axios.create({
-  timeout: 5000, // 5 seconds
+  timeout: 10000, // 10 seconds
 });
 
 
