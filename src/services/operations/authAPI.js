@@ -53,6 +53,15 @@ export function signUp(
   navigate
 ) {
   return async (dispatch) => {
+    // console.log("Account Type:", accountType);
+    // console.log("First Name:", firstName);
+    // console.log("Last Name:", lastName);
+    // console.log("Email:", email);
+    // console.log("Password:", password);
+    // console.log("Confirm Password:", confirmPassword);
+    // console.log("OTP:", otp);
+    // console.log("Navigate function:", navigate);
+
     const toastId = toast.loading("Loading...")
     dispatch(setLoading(true))
     try {
